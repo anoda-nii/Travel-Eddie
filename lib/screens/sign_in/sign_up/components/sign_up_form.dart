@@ -55,12 +55,12 @@ class _SignUpFormState extends State<SignUpForm> {
     if (validateAndSave()) {
       try {
         if (_formType == FormType.signup) {
-          AuthResult user = await FirebaseAuth.instance
+          UserCredential user = await FirebaseAuth.instance
               .createUserWithEmailAndPassword(email: email, password: password);
           print('Registered user: $user');
         }
         Navigator.of(context).push(MaterialPageRoute(
-            builder: (BuildContext context) => LoginSuccessScreen()));
+            builder: (BuildContext context) => CompleteProfileScreen()));
       } catch (e) {
         print('Error: $e');
       }
@@ -89,7 +89,7 @@ class _SignUpFormState extends State<SignUpForm> {
             press: () {
               if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
-                validateAndSubmit(); 
+                validateAndSubmit();
                 // if all are valid then go to success screen
                 Navigator.pushNamed(context, CompleteProfileScreen.routeName);
               }
