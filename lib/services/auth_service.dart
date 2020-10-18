@@ -64,4 +64,4 @@ initializeCurrentUser(AuthNotifier authNotifier) async {
     authNotifier.setUser(firebaseUser);
   }
 }
-}
+}  
