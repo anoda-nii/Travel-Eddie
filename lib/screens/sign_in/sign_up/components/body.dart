@@ -21,7 +21,7 @@ class Body extends StatelessWidget {
                 Text("Register Account", 
                 style: headingStyle,),
                 Text(
-                  "Complete your details or continue \nwith social media",
+                  "Complete your details to continue",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.black),
                 ),

@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:travel_eddie_k/screens/complete_profile/complete_profile_screen.dart';
 import 'package:travel_eddie_k/screens/forgot_password/forgot_password_screen.dart';
+import 'package:travel_eddie_k/screens/home_screen/home.dart';
 //import 'package:travel_eddie_k/screens/home/home_screen.dart';
 import 'package:travel_eddie_k/screens/login_success/login_success_screen.dart';
 //import 'package:travel_eddie_k/screens/otp/otp_screen.dart';
@@ -19,4 +20,5 @@ final Map<String, WidgetBuilder> routes = {
   CompleteProfileScreen.routeName: (context) => CompleteProfileScreen(),
   //OtpScreen.routeName: (context) => OtpScreen(),
   //HomeScreen.routeName: (context) => HomeScreen(),
+  HomeScreen.routename: (context) => HomeScreen()
 };

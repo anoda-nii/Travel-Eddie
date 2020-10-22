@@ -46,8 +46,8 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
         children: [
           buildFirstNameFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
-          buildLastNameFormField(),
-          SizedBox(height: getProportionateScreenHeight(30)),
+         // buildLastNameFormField(),
+         // SizedBox(height: getProportionateScreenHeight(30)),
           buildPhoneNumberFormField(),
           SizedBox(height: getProportionateScreenHeight(30)),
           buildAddressFormField(),
@@ -140,7 +140,8 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
       ),
     );
   }
-
+// first name form is changing to full name
+//last name form redundant now
   TextFormField buildFirstNameFormField() {
     return TextFormField(
       onSaved: (newValue) => firstName = newValue,
@@ -158,8 +159,8 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
         return null;
       },
       decoration: InputDecoration(
-        labelText: "First Name",
-        hintText: "Enter your first name",
+        labelText: "Full Name",
+        hintText: "Enter your full name",
         // If  you are using latest version of flutter then lable text and hint text shown like this
         // if you r using flutter less then 1.20.* then maybe this is not working properly
         floatingLabelBehavior: FloatingLabelBehavior.always,

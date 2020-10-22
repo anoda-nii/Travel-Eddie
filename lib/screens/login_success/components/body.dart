@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel_eddie_k/components/default_button.dart';
+import 'package:travel_eddie_k/screens/home_screen/home.dart';
 //import 'package:travel_eddie_k/screens/home/home_screen.dart';
 import 'package:travel_eddie_k/size_config.dart';
 import '../../../size_config.dart';
@@ -30,7 +31,7 @@ class Body extends StatelessWidget {
           child: DefaultButton(
             text: "Book a bus",
             press: () {
-              //Navigator.pushNamed(context, HomeScreen.routeName);
+              Navigator.pushNamed(context, HomeScreen.routename);
             },
           ),
         ),
