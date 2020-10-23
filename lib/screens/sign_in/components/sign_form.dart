@@ -59,7 +59,7 @@ class _SignFormState extends State<SignForm> {
               .signInWithEmailAndPassword(email: email, password: password));
           print('Signed in: $user');
 
-          Navigator.of(context).push(MaterialPageRoute(
+          Navigator.of(context).pushReplacement(MaterialPageRoute(
               builder: (BuildContext context) => LoginSuccessScreen()));
         }
       } catch (e) {

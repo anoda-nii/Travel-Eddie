@@ -59,7 +59,7 @@ class _SignUpFormState extends State<SignUpForm> {
               .createUserWithEmailAndPassword(email: email, password: password);
           print('Registered user: $user');
         }
-        Navigator.of(context).push(MaterialPageRoute(
+        Navigator.of(context).pushReplacement(MaterialPageRoute(
             builder: (BuildContext context) => CompleteProfileScreen()));
       } catch (e) {
         print('Error: $e');

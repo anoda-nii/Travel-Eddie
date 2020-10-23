@@ -20,8 +20,7 @@ class _BodyState extends State<Body> {
       "image": "assets/images/bluebus.png"
     },
     {
-      "text":
-          "We help students travel \nfrom Campus to anywhere in Ghana",
+      "text": "We help students travel \nfrom Campus to anywhere in Ghana",
       "image": "assets/images/redbus.png"
     },
     {
@@ -70,7 +69,8 @@ class _BodyState extends State<Body> {
                     DefaultButton(
                       text: "Continue",
                       press: () {
-                        Navigator.pushNamed(context, SignInScreen.routeName);
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (BuildContext context) => SignInScreen()));
                       },
                     ),
                     Spacer(),

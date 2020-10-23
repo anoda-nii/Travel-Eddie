@@ -21,4 +21,9 @@ class AuthServices {
     final User user = result.user;
     return user;
   }
+
+  //Signout
+  static logOut() {
+    return _auth.signOut();
+  }
 }
